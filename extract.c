@@ -3377,7 +3377,7 @@ __GDEF
     }
 
     G.inptr += input.pos;
-    G.incnt = (G.inbuf + INBUFSIZ) - G.inptr;  /* reset for other routines */
+    G.incnt -= G.inptr - G.inbuf;       /* reset for other routines */
 
 uzzstd_cleanup_exit:
     ZSTD_freeDCtx(dctx);

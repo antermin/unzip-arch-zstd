@@ -123,7 +123,7 @@ INSTALL_D = mkdir -p
 manext = 1
 prefix = /usr/local
 BINDIR = $(prefix)/bin#			where to install executables
-MANDIR = $(prefix)/man/man$(manext)#	where to install man pages
+MANDIR = $(prefix)/share/man/man$(manext)#	where to install man pages
 INSTALLEDBIN = $(BINDIR)/funzip$E $(BINDIR)/unzip$E $(BINDIR)/unzipsfx$E \
 	$(BINDIR)/zipgrep$E $(BINDIR)/zipinfo$E
 INSTALLEDMAN = $(MANDIR)/funzip.$(manext) $(MANDIR)/unzip.$(manext) \
